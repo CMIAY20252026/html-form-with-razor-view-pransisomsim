@@ -1,4 +1,4 @@
-@{
+﻿@{
     ViewData["Title"] = "Student Form";
 }
 
@@ -6,4 +6,37 @@
 
 <form method="post">
     <!-- Students will complete the form here -->
-</form>
+
+    <label>Full Name: <input type="text" name="fn" /></label><br/><br />
+    <label>Student Number: <input type="text" name="sn" /></label><br/><br />
+    <label>Email Address: <input type="email" name="email" /></label><br/><br />
+    <label>Gender: </label>
+    <label><input type="radio" name="radio" />Male</label>
+    <label><input type="radio" name="radio" />Female</label>
+
+    <br/><br />
+
+    <label>Year Level: </label>
+    <select name="year_level">
+        <option value="first">1st Year</option>
+        <option value="second">2nd Year</option>
+        <option value="third">3rd Year</option>
+        <option value="fourth">4th Year</option>
+    </select>
+
+    <br /><br />
+
+    <label>Course: </label>
+    <select name="year_level">
+        <option value="bscs">BSCS</option>
+        <option value="bsit">BSIT</option>
+        <option value="bsemc">BSEMC</option>
+    </select>
+
+    <br/><br />
+
+    <label>About Me</label><br />
+    <textarea name="aboutme">I'm a guy who likes to code</textarea><br/><br />
+    <input type="submit"/>
+
+</form>                                                      
